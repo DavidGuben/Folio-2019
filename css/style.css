@@ -315,7 +315,8 @@ h1 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 30rem 30rem;
-      padding: 5rem; } }
+      grid-gap: 10rem;
+      padding: 3rem; } }
   @media only screen and (max-width: 600px) {
     .card-container {
       display: grid;
