@@ -8,55 +8,61 @@
 
     <!--<link href="css/icon-font.css" rel="stylesheet">-->
     <link href="src/css/style.css" rel="stylesheet">
-        <title>2019 | Folio</title>
+        <title>Folio | 2019</title>
     </head>
     <body>
         <div class="navigation" style="transition: all .2s;">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onclick="toggleNaviDisplay()">
         
             <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
+                <span class="navigation__icon"></span>
             </label>
         
-            <div class="navigation__background">&nbsp;</div>
+            <div class="navigation__background"></div>
                 <nav class="navigation__nav">
                     <ul class="navigation__list" id="navi-list" style="display:none;">
                         <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Contact me</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Projects</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>GitHub</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Linkedin</a></li>
+                        <li class="navigation__item"><a href="https://github.com/DavidGuben" class="navigation__link" target="_blank"><span>03</span>GitHub</a></li>
+                        <li class="navigation__item"><a href="https://www.linkedin.com/in/david-guben-79b3063b/" class="navigation__link" target="_blank"><span>04</span>Linkedin</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="container">
 
-                <header class="projects">
-                    <h1 class="projects__header">Projects</h1>
+                <header class="header">
+                    <h1 class="header__heading">Projects</h1>
                 </header>
 
                 <main class="card-container">
                     
                     <div class="card">
-                        <a href="https://davidguben.github.io/natours-scss">
-                        <div class="card__side card__side--front card__side--front-1">
+                        <!-- <a href="https://davidguben.github.io/natours-scss"> -->
+                        <div id="card__side--front" class="card__side card__side--front card__side--front-1">
                                 
                             <div class="card__picture card__picture--1">
-                                &nbsp;
+                                
                             </div>
                             
-                            <h4 class="card__heading">
-                                <span class="card__heading-span">
+                            <div class="card__details">
+                                <span class="card__details-heading--span">
                                     Natours
                                 </span>
-                            </h4>
+                                <ul class="card__details-tech">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                </ul>
+                                <button onclick=flipCard()>flip</button>
+                            </div>
                         
                         </div>
-                        <div class="card__side card__side--back card__side--back-1">
+                        <div id="card__side--back" class="card__side card__side--back card__side--back-1">
                             <div class="card__cta">
                                 Visit site
+                                <button onclick=flipCardBack()>flip card</button>
                             </div>
                         </div>
-                        </a>
+                        <!-- </a> -->
                     </div>
                     
                     <div class="card">
