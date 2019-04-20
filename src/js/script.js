@@ -10,6 +10,7 @@ function toggleNaviDisplay () {
     }
 }
 
+
 // toggle flipping the card
 function flipCard1() {
     let x = document.getElementById('card__side--front-1');
@@ -27,6 +28,7 @@ function flipCardBack1() {
     x.style.transform = "rotateY(0)";
     y.style.transform = "rotateY(-180deg)";
 }
+
 
 // toggle flipping the card
 function flipCard2() {
@@ -46,6 +48,7 @@ function flipCardBack2() {
     y.style.transform = "rotateY(-180deg)";
 }
 
+
 // toggle flipping the card
 function flipCard3() {
     let x = document.getElementById('card__side--front-3');
@@ -63,6 +66,7 @@ function flipCardBack3() {
     x.style.transform = "rotateY(0)";
     y.style.transform = "rotateY(-180deg)";
 }
+
 
 // toggle flipping the card
 function flipCard4() {
@@ -82,6 +86,7 @@ function flipCardBack4() {
     y.style.transform = "rotateY(-180deg)";
 }
 
+
 // toggle flipping the card
 function flipCard5() {
     let x = document.getElementById('card__side--front-5');
@@ -99,6 +104,7 @@ function flipCardBack5() {
     x.style.transform = "rotateY(0)";
     y.style.transform = "rotateY(-180deg)";
 }
+
 
 // toggle flipping the card
 function flipCard6() {
